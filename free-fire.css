@@ -1,3 +1,4 @@
+/* semua */
 * {
   margin: 0;
   padding: 0;
@@ -11,41 +12,24 @@ body {
   background-color: rgb(45, 12, 77);
 }
 
-/* BAWAH SUDAH NAVBAR */
+/*NAVBAR */
 header {
   text-align: center;
   position: fixed;
   width: 100%;
   top: 0;
   font-weight: bold;
-  font-size: 15pt;
+  font-size: 1.2rem;
   justify-content: center;
-  text-align: center;
   margin-top: 25px;
+  background-color: rgba(45,12,77,0.9);
+  z-index: 1000;
+  padding: 10px 0;
 }
 
 .title {
   color: blueviolet;
   border-bottom: 1px solid rgb(156, 5, 194);
-  align-items: center;
-  justify-content: center;
-}
-
-.search {
-  width: 30%;
-  border: none;
-  border-radius: 0 0 0 10px;
-  padding: 2px;
-}
-
-.cari {
-  margin-left: -5px;
-  border: none;
-  border-radius: 0 10px 0 0;
-  padding: 2px;
-  color: black;
-  background-color: blueviolet;
-  width: 10%;
 }
 
 .container-navbar {
@@ -58,30 +42,50 @@ header {
   height: 100px;
   display: flex;
   justify-content: center;
-}
+  flex-wrap: wrap;
+ }
 
 .li-navbar {
   color: white;
-  list-style: none;
   margin: 5px;
   padding: 10px;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .li-navbar:hover {
   background-color: rgb(61, 2, 170);
-  transition: 0.1s ease-in-out;
-  transition-delay: 0.1s;
+  transition: 0.2s ease-in-out;
   border-radius: 10px;
-  height: 40px;
 }
 
 .a-navbar {
   color: blueviolet;
   text-decoration: none;
-  border-bottom: 3px;
 }
-/* di bawah sudah content */
+
+/*  CONTENT */
 .ff {
-  width: 36%;
+  width: 36%; 
+}
+
+@media (max-width: 1024px) {
+  .ff {
+    width: 50%; 
+  }
+}
+
+@media (max-width: 768px) {
+  .ff {
+    width: 100%; 
+  }
+
+  header {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .ul-navbar {
+    flex-direction: column;
+    gap: 5px;
+  }
 }
