@@ -17,7 +17,7 @@ body {
 /*  NAVBAR */
 header {
   text-align: center;
-  
+
   width: 100%;
   top: 0;
   font-weight: bold;
@@ -40,7 +40,7 @@ header {
 .ul-navbar {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   gap: 10px;
   padding: 10px 0;
 }
@@ -107,6 +107,12 @@ header {
   height: auto;
   border-radius: 10px;
 }
+.choose_1:checked ~ .slides > .s1 {
+  margin-left: -0rem;
+}
+.choose_2:checked ~ .slides > .s1 {
+  margin-left: -50rem;
+}
 
 /* content */
 .title-c {
@@ -164,7 +170,6 @@ header {
   font-size: 1rem;
 }
 
-
 @media (max-width: 768px) {
   .search {
     width: 70%;
@@ -173,7 +178,6 @@ header {
     width: 25%;
   }
 }
-
 
 @media (max-width: 768px) {
   .ul-navbar {
