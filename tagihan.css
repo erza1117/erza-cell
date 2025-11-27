@@ -19,14 +19,14 @@ body {
 /* NAVBAR */
 header {
   text-align: center;
-  
+
   width: 100%;
   top: 0;
   font-weight: bold;
   font-size: 1.2rem;
   justify-content: center;
   margin-top: 25px;
-  background-color: rgba(45,12,77,0.9);
+  background-color: rgba(45, 12, 77, 0.9);
   z-index: 1000;
   padding: 10px 0;
 }
@@ -45,7 +45,7 @@ header {
 .ul-navbar {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -90,6 +90,12 @@ header {
   height: auto;
   border-radius: 10px;
 }
+.choose_1:checked ~ .slides > .s1 {
+  margin-left: -0rem;
+}
+.choose_2:checked ~ .slides > .s1 {
+  margin-left: -76rem;
+}
 
 /* CONTENT  */
 .title-c {
@@ -106,14 +112,14 @@ header {
 }
 
 .item {
-  flex: 1 1 calc(33% - 20px); 
+  flex: 1 1 calc(33% - 20px);
   gap: 10px;
   align-items: center;
   justify-content: center;
 }
 
-
-.logo-pln, .logo-pdam {
+.logo-pln,
+.logo-pdam {
   height: auto;
   max-width: 100%;
 }
@@ -142,10 +148,9 @@ header {
   font-size: 1rem;
 }
 
-
 @media (max-width: 1024px) {
   .item {
-    flex: 1 1 calc(50% - 20px); 
+    flex: 1 1 calc(50% - 20px);
   }
 }
 
@@ -161,7 +166,7 @@ header {
   }
 
   .item {
-    flex: 1 1 100%; 
+    flex: 1 1 100%;
   }
 
   .slider {
