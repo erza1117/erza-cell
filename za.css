@@ -108,10 +108,10 @@ header {
   border-radius: 10px;
 }
 .choose_1:checked ~ .slides > .s1 {
-  margin-left: -0rem;
+  margin-left: 0%;
 }
 .choose_2:checked ~ .slides > .s1 {
-  margin-left: -76rem;
+  margin-left: -100%;
 }
 
 /* content */
